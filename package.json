@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel-node src/build.js",
     "lint": "eslint src",
-    "gh": "git checkout -B gh-pages && git add -f dist && git commit -am 'Rebuild website' && git subtree push --prefix dist origin gh-pages && git checkout -"
+    "gh": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Alexander <alexkuz@gmail.com> (http://kuzya.org/)",
   "license": "MIT",
