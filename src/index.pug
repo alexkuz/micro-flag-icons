@@ -2,7 +2,18 @@ doctype html
 html(lang="en")
   head
     title Micro SVG Icons
+    style.
+      img { box-shadow: 0 0 0 1px #000; }
   body
     h1 Micro SVG Icons
-    each image in images
-      img(src=image width=40 height=30 style='margin-left: 1rem')
+    h4 Total source size: #{totalPugSize}
+    h2 SVG
+    h4 Total size: #{totalSvgSize}
+    div(style="display: flex")
+      each image in images
+        div(style='margin-left: 1rem')
+          img(src=image width=40 height=30)
+          div= image
+    h2 SVG Bundle
+    h4 Size: #{bundleSize}
+    img(src='bundle.svg' width=400)
